@@ -30,6 +30,7 @@
   "dependencies": {
     "@auth/sveltekit": "latest",
     "@date-fns/tz": "^1.4.1",
+    "@sveltejs/adapter-node": "^5.5.2",
     "@tailwindcss/vite": "^4.1.18",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
