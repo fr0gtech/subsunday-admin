@@ -5,10 +5,9 @@
   import * as Card from "$lib/components/ui/card/index.js"
   import Input from "$lib/components/ui/input/input.svelte"
   let fromGame = $state<any>(null)
-  let toGame = $state(null)
   let steamId = $state<any>(null)
   const mergeGame = async () => {
-    if (!fromGame || !toGame) {
+    if (!fromGame || !steamId) {
       throw new Error("did not select")
     }
 
