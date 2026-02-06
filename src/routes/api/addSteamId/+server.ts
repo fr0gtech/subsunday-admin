@@ -33,7 +33,7 @@ export async function GET({ url }) {
 
 }
 
-export async function getInfobyId(appId: number) {
+async function getInfobyId(appId: number) {
     // when rebuilding votes this may hit a rate limit?
     const url = new URL("https://store.steampowered.com/api/appdetails")
     url.searchParams.set("appids", appId.toString());
